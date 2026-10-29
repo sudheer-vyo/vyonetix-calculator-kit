@@ -1,0 +1,9 @@
+{
+  "name": "vyonetix-calculator-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free planning math and an electricity-use web component",
+  "license": "MIT",
+  "scripts": {"test": "node --test test.mjs"}
+}
