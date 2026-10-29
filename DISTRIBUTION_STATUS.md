@@ -4,7 +4,7 @@ Updated 2026-10-29. This repository contains useful source packages and a machin
 
 | Channel | Package | State |
 |---|---|---|
-| GitHub | `sudheer-vyo/vyonetix-calculator-kit` | Public repository; source update to be published in this commit |
+| GitHub | `sudheer-vyo/vyonetix-calculator-kit` | Public repository; source update published in commit [`5fe7f2a`](https://github.com/sudheer-vyo/vyonetix-calculator-kit/commit/5fe7f2a580c7543b7e004d02e2f9ef36773c0d6d) on 2026-10-29 |
 | npm | `vyonetix-calculator-kit@0.2.0` | Package built and name endpoint returned HTTP 404 (not found) on 2026-10-29, consistent with an available name; not uploaded because npm CLI is not authenticated |
 | PyPI | `vyonetix-calc-kit==0.1.0` | Wheel built and name endpoint returned HTTP 404 (not found) on 2026-10-29, consistent with an available name; not uploaded because no PyPI publisher credential/trusted publisher is configured |
 | Docker Hub | proposed `vyonetix-calc-kit` | Dockerfile prepared; Docker CLI/daemon and Docker Hub credential are not configured, so image was not built or uploaded |
