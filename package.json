@@ -1,9 +1,20 @@
 {
   "name": "vyonetix-calculator-kit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "private": false,
   "type": "module",
   "description": "Dependency-free planning math and an electricity-use web component",
   "license": "MIT",
-  "scripts": {"test": "node --test test.mjs"}
+  "files": ["calculations.mjs", "energy-widget.mjs", "README.md", "LICENSE"],
+  "exports": {
+    ".": "./calculations.mjs",
+    "./widget": "./energy-widget.mjs"
+  },
+  "scripts": {"test": "node --test test.mjs"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudheer-vyo/vyonetix-calculator-kit.git"
+  },
+  "homepage": "https://deals.vyonetixsolutions.com.au/tools/",
+  "bugs": {"url": "https://github.com/sudheer-vyo/vyonetix-calculator-kit/issues"}
 }

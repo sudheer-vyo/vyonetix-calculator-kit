@@ -2,6 +2,20 @@
 
 Small dependency-free JavaScript planning functions and an embeddable electricity-use widget. The widget computes locally, displays an estimate immediately and lets a visitor deliberately open the fuller Vyonetix tool.
 
+## JavaScript library
+
+Install from npm when the package release is available:
+
+```console
+npm install vyonetix-calculator-kit
+```
+
+```js
+import { energyKWh, energyCost, ratedYieldMonths, costPerPage } from 'vyonetix-calculator-kit';
+```
+
+The package exposes the user-input calculations at its root and the optional web component at `vyonetix-calculator-kit/widget`.
+
 ## Use the functions
 
 ```js
@@ -33,6 +47,17 @@ For a local demonstration, serve this folder with `python -m http.server 8783 --
 - Cost per page = entered cartridge cost / entered page yield.
 
 Use measured power and your own tariff. Defaults are example inputs. This is a planning aid and does not read appliance or printer telemetry.
+
+## Python CLI and JSON definitions
+
+The [`python/`](python/) folder contains an installable Python CLI that returns JSON, and [`datasets/calculations-v1.json`](datasets/calculations-v1.json) documents the formulas and units in a machine-readable format. Install the Python package from PyPI when its release is published:
+
+```console
+python -m pip install vyonetix-calc-kit
+vyonetix-calc energy --watts 100 --hours 8 --tariff-per-kwh 0.30
+```
+
+The [`docker/`](docker/) folder contains a Dockerfile and build instructions. The image is not published yet; it requires the owner's Docker Hub namespace and login before push.
 
 ## Validation
 

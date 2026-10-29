@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Vyonetix planning calculation definitions",
+  "scope": "Generic user-entered estimates; no product compatibility, live retailer data, or telemetry",
+  "calculations": [
+    {
+      "id": "energy-kwh",
+      "name": "Electrical energy estimate",
+      "inputs": {"power_w": "finite number >= 0", "hours": "finite number >= 0"},
+      "formula": "power_w * hours / 1000",
+      "output": "kWh"
+    },
+    {
+      "id": "energy-cost",
+      "name": "Energy cost estimate",
+      "inputs": {"power_w": "finite number >= 0", "hours": "finite number >= 0", "tariff_per_kwh": "finite number >= 0"},
+      "formula": "power_w * hours / 1000 * tariff_per_kwh",
+      "output": "currency units from supplied tariff"
+    },
+    {
+      "id": "rated-yield-months",
+      "name": "Rated consumable yield scenario",
+      "inputs": {"rated_pages": "finite number > 0", "pages_per_month": "finite number > 0"},
+      "formula": "rated_pages / pages_per_month",
+      "output": "months; simple scenario, not remaining toner measurement"
+    },
+    {
+      "id": "cost-per-page",
+      "name": "Entered cartridge cost per rated page",
+      "inputs": {"cartridge_cost": "finite number >= 0", "rated_pages": "finite number > 0"},
+      "formula": "cartridge_cost / rated_pages",
+      "output": "currency units per page using supplied values"
+    }
+  ]
+}
