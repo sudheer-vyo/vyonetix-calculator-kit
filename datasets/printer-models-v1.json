@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-29",
+  "licence_scope": "Original schema and code are MIT; manufacturer trademarks and source documents are not relicensed.",
+  "records": [
+    {
+      "id": "brother-hl-l2400dw-au",
+      "brand": "Brother",
+      "model": "HL-L2400DW",
+      "market": "AU",
+      "aliases": [
+        "HL L2400DW",
+        "HLL2400DW",
+        "Brother HL-L2400DW"
+      ],
+      "source_url": "https://www.brother.com.au/-/media/ap2/Australia/Products/Common/Brochures/HL-L2400DW---Brochure.pdf?rev=c36e4868ddd942438fc2a4ec67257c7a",
+      "source_name": "Brother Australia brochure, consumables and footnotes",
+      "parts": [
+        {
+          "part": "TN2530",
+          "kind": "standard toner",
+          "rated_pages": 1200
+        },
+        {
+          "part": "TN2530XL",
+          "kind": "high-yield toner",
+          "rated_pages": 3000
+        },
+        {
+          "part": "DR2530",
+          "kind": "drum",
+          "rated_pages": 15000
+        }
+      ],
+      "limits": "Rated toner yield uses the manufacturer's test conditions. Drum rating assumes one page per job. No remaining-supply measurement or replacement diagnosis."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "privacy": "Processed locally. Do not share reports containing confidential equipment data.",
+  "rows": [
+    {
+      "row": 2,
+      "model": "Brother HL-L2400DW",
+      "market": "AU",
+      "status": "matched_reference",
+      "reason": "Exact normalized model and explicit market matched the sourced record",
+      "part": "TN2530XL",
+      "pages_per_month": 300.0,
+      "rated_pages": 3000,
+      "illustrative_months": 10.0,
+      "source_url": "https://www.brother.com.au/-/media/ap2/Australia/Products/Common/Brochures/HL-L2400DW---Brochure.pdf?rev=c36e4868ddd942438fc2a4ec67257c7a",
+      "limits": "Rated toner yield uses the manufacturer's test conditions. Drum rating assumes one page per job. No remaining-supply measurement or replacement diagnosis.",
+      "tool_url": "https://deals.vyonetixsolutions.com.au/tools/printer-supply-toolbox/?market=AU&brand=Brother&model=HL-L2400DW&part=TN2530XL"
+    },
+    {
+      "row": 3,
+      "model": "HLL2400DW",
+      "market": "AU",
+      "status": "matched_reference",
+      "reason": "Exact normalized model and explicit market matched the sourced record",
+      "part": "TN2530XL",
+      "pages_per_month": 600.0,
+      "rated_pages": 3000,
+      "illustrative_months": 5.0,
+      "source_url": "https://www.brother.com.au/-/media/ap2/Australia/Products/Common/Brochures/HL-L2400DW---Brochure.pdf?rev=c36e4868ddd942438fc2a4ec67257c7a",
+      "limits": "Rated toner yield uses the manufacturer's test conditions. Drum rating assumes one page per job. No remaining-supply measurement or replacement diagnosis.",
+      "tool_url": "https://deals.vyonetixsolutions.com.au/tools/printer-supply-toolbox/?market=AU&brand=Brother&model=HL-L2400DW&part=TN2530XL"
+    },
+    {
+      "row": 4,
+      "model": "Unknown Printer",
+      "market": "AU",
+      "status": "unresolved",
+      "reason": "Exact supported model and market required"
+    },
+    {
+      "row": 5,
+      "model": "HL-L2400DW",
+      "market": "UK",
+      "status": "unresolved",
+      "reason": "Exact supported model and market required"
+    },
+    {
+      "row": 6,
+      "model": "HL-L2400DW",
+      "market": "AU",
+      "status": "invalid",
+      "reason": "pages_per_month must be finite and positive"
+    }
+  ],
+  "matched": 2,
+  "unresolved": 2,
+  "invalid": 1
+}

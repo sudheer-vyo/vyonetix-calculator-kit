@@ -1,0 +1,45 @@
+name: Validate calculator kit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the reviewed source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Test existing planning library
+        run: node --test test.mjs
+      - name: Test local compiler and printer batch behavior
+        run: python3 automation/tests/test_reviewed_pipeline.py
+      - name: Build isolated examples
+        run: python3 automation/deploy_and_ping.py build --out /tmp/vyonetix-preview
+      - name: Check generated interactive calculator
+        run: node automation/tests/test_label_preview.mjs /tmp/vyonetix-preview/index.html
+      - name: Audit owned public feed endpoints
+        if: github.event_name != 'pull_request'
+        run: python3 automation/deploy_and_ping.py audit --out /tmp/vyonetix-feed-audit.json
+      - name: Write a concise validation receipt
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          p = Path('/tmp/vyonetix-feed-audit.json')
+          text = '## Vyonetix kit validation\n\nThis run validates source examples. It does not deploy the website, send notifications or submit indexing requests.\n'
+          if p.exists():
+              data = json.loads(p.read_text())
+              text += '\n### Public feed observations\n\n| Endpoint | HTTP | Parse |\n|---|---|---|\n'
+              for item in data['checks']:
+                  text += f"| {item['url']} | {item.get('status')} | {item.get('parse', item.get('error', 'not parsed'))} |\n"
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write(text)
+          PY
