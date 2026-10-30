@@ -107,3 +107,15 @@ The [GitHub Actions workflow](https://github.com/sudheer-vyo/vyonetix-calculator
 ## License
 
 Original code in this repository is available under the MIT license. Third-party trademarks and materials are not licensed by this repository. No manufacturer endorsement is implied.
+## Live tools, updates and feeds
+
+Explore the [Vyonetix tools directory](https://deals.vyonetixsolutions.com.au/tools/) for browser-based calculators and reference tools. The site publishes several RSS feeds for readers and publisher integrations:
+
+- [Latest site and tool updates](https://deals.vyonetixsolutions.com.au/tools/feed.xml)
+- [Tools-only feed](https://deals.vyonetixsolutions.com.au/tools/tools-rss.xml)
+- [Curated visual update feed](https://deals.vyonetixsolutions.com.au/tools/broadcast.php)
+- [WordPress posts](https://deals.vyonetixsolutions.com.au/feed/)
+
+Choose one feed per reader or publication where possible; the feeds overlap, so following all of them can show duplicate stories. RSS makes updates available to a reader or connected publisher. It does not itself deliver an audience, guarantee search indexing, or create paid ads. Pinterest's RSS integration can publish organic Pins from a selected feed; a Pinterest Ads campaign is a separate paid campaign.
+
+The tools provide estimates or prepare retailer searches from user-entered details. Follow the tool's manufacturer references and disclosures before making a purchase decision.
