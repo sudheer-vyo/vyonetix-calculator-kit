@@ -1,6 +1,6 @@
 # Developer distribution status
 
-Updated 2026-10-29. This repository contains useful source packages and a machine-readable formula catalog. Package-index listing is a separate action from publishing this Git repository.
+Updated 2026-11-19. This repository contains useful source packages and a machine-readable formula catalog. Package-index listing is a separate action from publishing this Git repository.
 
 | Channel | Package | State |
 |---|---|---|
@@ -26,3 +26,7 @@ docker push <your-dockerhub-namespace>/vyonetix-calc-kit:0.1.0
 Do not place tokens in this repository. Use each registry's secure login or trusted-publisher mechanism. Check package name ownership immediately before first publication; a prior 404 is a dated observation, not a permanent reservation. Docker namespace must be the account owner controls.
 
 These platforms provide package discovery and reuse, not guaranteed impressions, installs, website traffic, subscribers, or affiliate revenue. The package calculations are generic and offline; user values are not submitted to Vyonetix.
+
+## 2026-11-19 Vyonetix browser-tool directory
+
+The public repository now includes a generated directory of 44 live Vyonetix browser-tool links, a JSON catalogue, and three original engineering walkthroughs for SFP optical margin, constant-power PoE cable drop, and uncompressed video bandwidth. The catalogue is a web-page directory, not an OpenAPI service. It contains no retailer links, prices, inventory or deal feed. The walkthroughs use hypothetical examples and cite manufacturer/standards sources. The three existing package tests passed locally before publication. No GitHub view, site visit, affiliate click or sale is attributed to this update; measure those from the respective platform reports.

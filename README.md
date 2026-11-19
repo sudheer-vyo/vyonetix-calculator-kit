@@ -119,3 +119,9 @@ Explore the [Vyonetix tools directory](https://deals.vyonetixsolutions.com.au/to
 Choose one feed per reader or publication where possible; the feeds overlap, so following all of them can show duplicate stories. RSS makes updates available to a reader or connected publisher. It does not itself deliver an audience, guarantee search indexing, or create paid ads. Pinterest's RSS integration can publish organic Pins from a selected feed; a Pinterest Ads campaign is a separate paid campaign.
 
 The tools provide estimates or prepare retailer searches from user-entered details. Follow the tool's manufacturer references and disclosures before making a purchase decision.
+
+## Current Vyonetix tool directory
+
+The Vyonetix website now lists 44 individual browser tools across hardware planning, networking, power, printer supplies, shopping and cost estimation. This repository contains a [generated link directory and machine-readable catalogue](web-tools/README.md), not a callable API or a mirror of retailer listings. The website pages are the canonical versions and explain each tool's current scope, assumptions and sources.
+
+Three focused engineering walkthroughs cover [SFP optical receiver margin](docs/engineering/sfp-optical-link-budget.md), [steady-state PoE cable drop](docs/engineering/poe-cable-voltage-drop.md), and [uncompressed video link bandwidth](docs/engineering/video-link-bandwidth.md). They use hypothetical examples and link to the corresponding Vyonetix tool. The site may contain affiliate links; the disclosure appears beside those links on the site.
